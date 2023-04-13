@@ -1,0 +1,28 @@
+package aula04;
+public class Aula05 {
+    public static void main(String[] args) {
+        
+        ContaBanco p1 = new ContaBanco(); // criacao da conta no banco.
+        p1.setNumConta(1038); // preenche numero da conta. 
+        p1.setDono ("Leonardo"); // preenche nome do Dono.
+        p1.abrirConta("CC"); // Abrindo conta CC.
+        
+        ContaBanco p2 = new ContaBanco ();// criacao da conta no banco. 
+        p2.setNumConta(1039); // preenche numero da conta.
+        p2.setDono("Paulo Cesar"); // preenche nome do Dono. 
+        p2.abrirConta ("CP"); // Abrindo conta CP. 
+        
+        
+        p1.depositar(100); // Pessoa 1 depoista 100.
+        p2.depositar(300); // Pessoa 2 deposita 300.
+        
+        p2.sacar(100); // Pessoa 2 saca 100
+        
+        p1.sacar(150); // Pessoa 1 saca 150
+        p1.fecharConta(); // Pessoa 1 sem saldo fecha a conta. 
+        
+        p1.estadoAtual(); // informa o estado atual da conta. 
+        p2.estadoAtual(); // informa o estado atual da conta. 
+    }
+    
+}
